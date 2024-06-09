@@ -43,8 +43,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
+          <!-- <li><a href="services.html">Services</a></li> -->
           <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -71,7 +71,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>For inquiries or to discuss your project needs, feel free to reach out via email or phone</p>
         </div>
 
         <div class="row mt-5">
@@ -102,28 +102,64 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          <!--<script>
+              document.addEventListener("DOMContentLoaded", function () {
+                document.querySelector(".php-email-form").addEventListener("submit", function (event) {
+                  event.preventDefault();
+                  
+                  const form = event.target;
+                  const formData = new FormData(form);
+                  
+                  document.querySelector(".loading").style.display = "block";
+                  document.querySelector(".error-message").style.display = "none";
+                  document.querySelector(".sent-message").style.display = "none";
+                  
+                  fetch(form.action, {
+                    method: form.method,
+                    body: formData
+                  })
+                  .then(response => response.json())
+                  .then(data => {
+                    document.querySelector(".loading").style.display = "none";
+                    if (data.status === "success") {
+                      document.querySelector(".sent-message").style.display = "block";
+                      form.reset();
+                    } else {
+                      document.querySelector(".error-message").style.display = "block";
+                      document.querySelector(".error-message").textContent = data.message;
+                    }
+                  })
+                  .catch(error => {
+                    document.querySelector(".loading").style.display = "none";
+                    document.querySelector(".error-message").style.display = "block";
+                    document.querySelector(".error-message").textContent = "There was an error sending your message.";
+                  });
+                });
+              });
+              </script>
+              
+              <form action="contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                 </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form> --->   
 
           </div>
 
